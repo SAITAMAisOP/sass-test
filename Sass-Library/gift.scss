@@ -1,3 +1,5 @@
+@import 'index';
+
 .gift-course {
   width: 100%;
   height: 15rem;
@@ -33,7 +35,11 @@
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 13.6rem;
+}
 
+.form-title {
+  font-size: 3.2rem;
+  font-weight: 600;
 }
 
 .descriptive-text {
@@ -102,6 +108,7 @@ form input {
   font-size: 1.4rem;
   font-weight: 400;
   color: #4E5566;
+  margin-bottom: 8rem;
 
   input {
     width: fit-content;
@@ -117,13 +124,16 @@ form input {
 }
 
 .content-box.need-fix {
+  padding-left: 1.8rem;
   input {
     margin: 0;
-
-
+  }
+  .vertical-splitter {
+    width: 1px;
+    height: 76%;
+    background-color: #E9EAF0;
   }
   img {
-    border-right: 1px solid #E9EAF0;
     padding-right: 1.2rem;
   }
 }

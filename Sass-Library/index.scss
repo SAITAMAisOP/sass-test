@@ -25,6 +25,14 @@
   width: 20rem;
   font-size: $base-font-size + .2rem;
   color: #4E5566;
+  height: 4.9rem;
+}
+
+.search-box label {
+  margin: 0;
+}
+.search-box input {
+  height: 100%;
 }
 
 .btn-browse,
@@ -37,7 +45,8 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
-input,
+
+:not(input[type="checkbox"]),
 textarea {
   width: 42rem;
 }
