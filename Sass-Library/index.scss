@@ -28,7 +28,8 @@
 }
 
 .btn-browse,
-input[type="text"] {
+input,
+textarea {
   padding: $base-padding;
   background: none;
   border:1px solid #E9EAF0;
@@ -36,7 +37,8 @@ input[type="text"] {
   justify-content: space-between;
   align-items: center;
 }
-input[type="text"] {
+input,
+textarea {
   width: 42rem;
 }
 
