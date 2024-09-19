@@ -27,12 +27,23 @@
   color: #4E5566;
   height: 4.9rem;
 }
+.search-box {
+  width: 43rem;
+}
 
 .search-box label {
   margin: 0;
 }
 .search-box input {
   height: 100%;
+  width: 100%;
+}
+
+.first-half label {
+  width: 43rem;
+  input {
+    width: 100%;
+  }
 }
 
 .btn-browse,
@@ -450,4 +461,25 @@ header {
   width: 100%;
   height: 1px;
   background-color: #363B47;
+}
+
+.footer-box {
+  color: #8C94A3;
+  font-size: 1.4rem;
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    font-weight: 500;
+    color: #4E5566;
+  }
+  .users {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    span {
+      font-weight: 500;
+      color: #4E5566;
+    }
+  }
 }
