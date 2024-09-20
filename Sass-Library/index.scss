@@ -3,6 +3,7 @@
 @import 'variables';
 @import 'components/navigation';
 @import 'course';
+@import 'breakpoints';
 
 @mixin main-nav($bg-color:#fff,$color:#4E5566) {
   display: flex;
@@ -27,14 +28,19 @@
   color: #4E5566;
   height: 4.9rem;
 }
-.search-box {
-  width: 43rem;
-}
 
 .search-box label {
   margin: 0;
 }
-.search-box input {
+
+.search-box {
+  width: 43rem;
+  border: 1px solid #E9EAF0;
+  padding: 0 0 0 1.8rem ;
+}
+
+.search-box  input {
+  border: none;
   height: 100%;
   width: 100%;
 }
@@ -75,6 +81,7 @@ header {
     font-size: $base-font-size;
     font-weight: 300;
     padding: 0 $base-padding * 2;
+    color: #A1A5B3 !important;
     
     .navbar {
       display: flex;
@@ -94,7 +101,9 @@ header {
         border: none;
         background-color: #1D2026;
         font-weight: 300;
-
+        display: flex;
+        align-items: center;
+        gap: .6rem;
       }
     }
   }
