@@ -1,5 +1,53 @@
 @mixin xl {
-  @media (max-width:1400px) {
+  @media (max-width:1500px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width:1170px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width:1000px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width:850px) {
+    @content;
+  }
+}
+
+@mixin footer-fix {
+  @media (max-width:700px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width:576px) {
+    @content;
+  }
+}
+
+@mixin xxs {
+  @media (max-width:460px) {
+    @content;
+  }
+}
+
+@mixin vxxs {
+  @media (max-width:420px) {
+    @content;
+  }
+}
+
+@mixin very-small {
+  @media (max-width:300px) {
     @content;
   }
 }

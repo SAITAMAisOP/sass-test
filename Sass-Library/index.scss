@@ -13,6 +13,7 @@
   color: $color;
 }
 
+
 %btn {
   display: flex;
   justify-content: center;
@@ -26,7 +27,15 @@
   width: 20rem;
   font-size: $base-font-size + .2rem;
   color: #4E5566;
-  height: 4.9rem;
+  height: 100%;
+
+
+}
+
+.search-container .btn-browse {
+  @include sm {
+    display: none;
+  }
 }
 
 .search-box label {
@@ -37,6 +46,26 @@
   width: 43rem;
   border: 1px solid #E9EAF0;
   padding: 0 0 0 1.8rem ;
+  @include xl {
+    padding: 0;
+    @include xl {
+      width: 30rem;
+
+      img {
+        padding: 0 0 0 1.2rem ;
+      }
+    }
+
+    
+    .search-box label {
+      display: block;
+
+      
+    }
+  }
+  @include sm {
+    display: none;
+  }
 }
 
 .search-box  input {
@@ -51,6 +80,8 @@
     width: 100%;
   }
 }
+
+
 
 .btn-browse,
 input,
@@ -87,6 +118,10 @@ header {
       display: flex;
       gap: .8rem;
 
+      @include xs {
+        display: none;
+      }
+
       .nav-el {
         display: inline-block;
         padding: $base-padding;
@@ -112,6 +147,7 @@ header {
     @include main-nav();
     padding: $base-padding * 1.5 $base-padding * 2;
 
+
     .search-container {
       display: flex;
       align-items: center;
@@ -126,6 +162,10 @@ header {
         display: flex;
         gap: 2.4rem;
         align-items: center;
+
+        @include md {
+          display: none;
+        }
       }
       .header-icons img{
         width: 2.4rem;
@@ -136,22 +176,55 @@ header {
         background-color: #FFEEE8;
         color: #FF6636;
         border: 1px solid #FF6636;
+
+        @include md {
+          display: none;
+        }
       }
       .btn-sign {
         @extend %btn;
         color: #fff;
         background-color: #FF6636;
         border: 1px solid #FF6636;
+
+        @include md {
+          display: none;
+        }
       }
     }
+    
   }
 
 }
+
+.signing-container .btn-browse {
+  display: none;
+
+  @include sm {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: .8px;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 1.6rem;
+    color: #1D2026;
+  }
+
+  @include vxxs {
+    display: none;
+  }
+}
+
 
 .container {
   max-width: 132rem;
   width: 100%;
   margin: 4rem auto 0 ;
+
+  @include xl {
+    width: 88%;
+  }
 }
 .container-header {
   width:100%;
@@ -161,12 +234,20 @@ header {
   align-items: center;
   border: none;
   border-bottom: 1px solid #E9EAF0;
+
+  @include xl {
+    border: none;
+  }
+
+  @include sm {
+    display: none;
+  }
 }
 
 .container-header--top {
   display: flex;
   align-items: center;
-  gap: 39.6rem;
+  gap: 30rem;
   .first-half {
     justify-self: flex-start;
     display: flex;
@@ -179,8 +260,9 @@ header {
       background: none;
       border: 1px solid #FF6636;
       padding: $base-padding - .4rem;
-      padding-left: $base-padding * 1.5;
-
+      @include xl {
+      }
+      
       .filter-number {
         width: 2rem;
         height: 2.4rem;
@@ -190,6 +272,10 @@ header {
         background-color: #FF6636;
         color: #fff;
         margin-left: $base-margin - .4rem;
+        @include xl {
+
+          display: none;
+        }
       }
     }
   }
@@ -211,9 +297,14 @@ header {
 
 .container-header--bottom {
   display: flex;
+  width: 100%;
   align-items: center;
-  gap: 57.6rem;
+  justify-content: space-between;
   padding: 2.4rem $base-padding;
+  @include xl {
+    width: 100rem;
+
+  }
 
   .first-half  {
     display: flex;
@@ -223,6 +314,7 @@ header {
   .first-half a {
     color: #FF6636;
   }
+
 } 
 
 
@@ -231,11 +323,46 @@ header {
   grid-template-columns: 25% 75%;
   gap: 2.4rem;
   margin-top: 4rem;
+  
+
+  @include xl {
+    margin: 0 2.4rem ;
+    border-top: 1px solid #E9EAF0;
+    padding-top: 4rem;
+  }
+
+  @include sm {
+    border: none;
+    padding: 0;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
 
   .courses {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2.4rem;
+
+    @include xl {
+      margin-right: 2rem;
+    }
+    @include sm {
+      margin-right: 0;
+    }
+
+    @include xs {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include vxxs {
+      grid-template-columns: 1fr ;
+
+      .course-box {
+        width: 85%;
+        justify-self: center;
+      }
+    }
+
+
 
     .course-box {
       border: 1px solid #E9EAF0;
@@ -278,6 +405,10 @@ header {
         border: none;
         border-top: 1px solid #E9EAF0;
 
+        @include md {
+          padding: .8rem;
+        }
+
         .users strong {
           font-weight: 500;
         }
@@ -286,6 +417,17 @@ header {
   }
 }
 
+.courses a:last-child {
+  @include xs {
+    display: none;
+  }
+}
+
+.side-bar {
+  @include sm {
+    display: none;
+  }
+}
 
 .aside-row {
   margin-bottom: 2.4rem;
@@ -328,6 +470,11 @@ header {
 }
 
 .btns-box {
+  display: flex;
+  gap: .8rem;
+}
+.btns-box .btn-browse{
+  margin: 0;
   display: flex;
   gap: .8rem;
 }
@@ -379,6 +526,14 @@ header {
 
   .footer-top {
     padding: 8rem 0;
+
+
+    @include vxxs {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 0;
+    }
+
   }
 
   .footer-top .container {
@@ -386,9 +541,90 @@ header {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 
+  @include footer-fix {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .main-grid-col {
+      grid-column: 1/span 2;
+      margin-bottom: 8rem;
+
+      .footer-description {
+        width: 32rem;
+      }
+    }
+    .grid-col:last-child {
+      grid-row: 1;
+      grid-column: 3 / 4;
+    }
+  }
+
+  @include xxs {
+    grid-template-columns: 50% 50%;
+    row-gap: 2rem;
+    margin-left: 0;
+    padding: 0 1rem;
+    column-gap: 1rem;
+
+    .main-grid-col {
+      grid-row: 3;
+      margin-bottom: 0;
+    }
+
+    .grid-col:last-child {
+      grid-row: 2;
+      grid-column: 2 / -1;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  @include vxxs {
+    display: block;
+    margin: 0;
+
+    .main-grid-col {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 4.4rem;
+
+      div.social-icons  {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .grid-col {
+      margin-bottom: 3rem;
+    }
+
+    .grid-col:last-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .footer-description {
+      text-align: center;
+    }
+  }
+
   .main-grid-col {
     display: flex;
     flex-direction: column;
+
+    @include xl {
+      padding: 0 2rem;
+    }
 
     .logo {
       width: 175px;
@@ -452,8 +688,15 @@ header {
     border: none;
     margin: 0 auto;
 
+    @include footer-fix {
+      display: block;
+      text-align: center;
+    }
+
     .copyright  {
       font-size: 1.4rem;
+
+
       span {
         color: #fff;
       }
@@ -461,7 +704,12 @@ header {
     .btn-browse {
       color: #8C94A3;
       border: 1px solid #363B47;
+
+      @include footer-fix {
+        display: none;
+      }
     }
+
   }
 
 }
@@ -489,6 +737,20 @@ header {
     span {
       font-weight: 500;
       color: #4E5566;
+    }
+  }
+}
+
+img.logo {
+  @include very-small {
+    width: 15rem;
+  }
+}
+
+.added-nav {
+  @include very-small {
+    button {
+      font-size: 1.6rem;
     }
   }
 }

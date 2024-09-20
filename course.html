@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/index.css">
-  
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
   <header class="header">
     <div class="main-nav--top">
+      <i class='bx bx-menu'></i>
       <nav class="navbar">
         <a class="nav-el" href="index.html" target="_blank">Home</a>
         <a class="nav-el" href="course.html" target="_blank">Courses</a>
@@ -30,6 +31,7 @@
           <img src="img/social-icons/CaretDown (1).svg" alt="">
         </button>
         <div class="search-box">
+          
           <label for="">
             <img src="img/btn-related/MagnifyingGlass.svg" alt="">
             <input type="text" placeholder="what do you want to learn...">
@@ -44,6 +46,11 @@
         </div>
         <button class="btn-account">Create Account</button>
         <button class="btn-sign">Sign In</button>
+        <button class="btn-browse">
+          Category
+          <img src="img/social-icons/CaretDown (1).svg" alt="">
+        </button>
+        <i class='bx bx-menu'></i>
       </div>
     </div>
     </div>
@@ -714,9 +721,12 @@
       </div>
       <div class="article-splitter"></div>
       <div class="section-3">
-        <button class="add-to-cart">
-          Add to cart
-        </button>
+        <a href="form.html">
+          <button class="add-to-cart">
+            Add to cart
+          </button>
+
+        </a>
 
         <button class="buy-now">
           Buy now

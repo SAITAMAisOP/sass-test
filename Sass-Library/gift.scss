@@ -1,4 +1,5 @@
 @import 'index';
+@import 'base';
 
 .gift-course {
   width: 100%;
@@ -35,6 +36,26 @@
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 13.6rem;
+
+  @include md {
+    max-width: 100rem;
+    gap: 8rem;
+  }
+
+  @include sm {
+    max-width: 80rem;
+    gap: 3.2rem;
+  }
+
+  @include xs {
+    max-width: 100%;
+    display: block;
+    padding: 0 10rem  8rem;
+
+  }
+  @include xxs {
+    padding: 0 5rem  6rem;
+  }
 }
 
 .form-title {
@@ -86,6 +107,10 @@ form input {
 .transperent-div {
   width: 2.4rem;
   height: 2.4rem;
+
+  @include xxs {
+    display: none;
+  }
 }
 
 .content-box input {
@@ -95,9 +120,16 @@ form input {
 .label-box {
   display: flex;
   gap: 4%;
+
+  @include xxs {
+    flex-direction: column;
+  }
   .label-col {
     width: 48%;
 
+    @include xxs {
+      width: 100%;
+    }
 
   }
 }
@@ -147,11 +179,26 @@ form input {
     font-weight: 500;
     color: #1D2026;
     margin-bottom: 1.6rem;
+
+    @include xxs {
+      font-size: 1.4rem;
+      text-align: center;
+    }
   }
   .course-offer {
     display: flex;
     gap: 1.2rem;
     
+
+    img {
+      width: 80%;
+    }
+    
+
+    @include xxs {
+      flex-direction: column;
+      align-items: center;
+    }
 
 
     .by {
