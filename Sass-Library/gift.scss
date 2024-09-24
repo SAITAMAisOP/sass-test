@@ -1,10 +1,10 @@
-@import 'index';
-@import 'base';
+@import "index";
+@import "base";
 
 .gift-course {
   width: 100%;
   height: 15rem;
-  background-color: #F5F7FA;
+  background-color: #f5f7fa;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,19 +13,19 @@
   h1 {
     font-size: 2.4rem;
     font-weight: 600;
-    color: #1D2026;
+    color: #1d2026;
   }
 }
 .gift-nav {
   display: flex;
-  gap: .8rem;
+  gap: 0.8rem;
   align-items: center;
   margin-top: 1.6rem;
-  color: #6E7485;
+  color: #6e7485;
   font-size: 1.4rem;
 
   span {
-    color: #1D2026;
+    color: #1d2026;
     font-weight: 500;
   }
 }
@@ -50,30 +50,30 @@
   @include xs {
     max-width: 100%;
     display: block;
-    padding: 0 10rem  8rem;
-
+    padding: 0 10rem 8rem;
   }
   @include xxs {
-    padding: 0 5rem  6rem;
+    padding: 0 5rem 6rem;
   }
 }
 
 .form-title {
   font-size: 3.2rem;
   font-weight: 600;
+  color: #000;
 }
 
 .descriptive-text {
   font-size: 1.8rem;
-  color: #1D2026;
+  color: #1d2026;
   font-weight: 500;
   margin: 4rem 0 2rem;
 }
 label {
   font-size: 1.4rem;
   font-weight: 400;
-  color: #1D2026;
-  margin-bottom: .6rem;
+  color: #1d2026;
+  margin-bottom: 0.6rem;
 }
 
 .form-box {
@@ -85,7 +85,7 @@ label {
     width: 100%;
 
     &::placeholder {
-      font-family: 'Inter',sans-serif;
+      font-family: "Inter", sans-serif;
     }
   }
 }
@@ -130,7 +130,6 @@ form input {
     @include xxs {
       width: 100%;
     }
-
   }
 }
 
@@ -139,7 +138,7 @@ form input {
   gap: 1rem;
   font-size: 1.4rem;
   font-weight: 400;
-  color: #4E5566;
+  color: #4e5566;
   margin-bottom: 8rem;
 
   input {
@@ -163,7 +162,7 @@ form input {
   .vertical-splitter {
     width: 1px;
     height: 76%;
-    background-color: #E9EAF0;
+    background-color: #e9eaf0;
   }
   img {
     padding-right: 1.2rem;
@@ -171,13 +170,13 @@ form input {
 }
 
 .offer-column {
-  border: 1px solid #E9EAF0;
+  border: 1px solid #e9eaf0;
   align-self: start;
 
   .offer-title {
     font-size: 1.6rem;
     font-weight: 500;
-    color: #1D2026;
+    color: #1d2026;
     margin-bottom: 1.6rem;
 
     @include xxs {
@@ -188,45 +187,41 @@ form input {
   .course-offer {
     display: flex;
     gap: 1.2rem;
-    
 
     img {
       width: 80%;
     }
-    
 
     @include xxs {
       flex-direction: column;
       align-items: center;
     }
 
-
     .by {
       font-size: 1.2rem;
       font-weight: 400;
-      color: #A1A5B3;
-      margin-bottom: .5rem;
+      color: #a1a5b3;
+      margin-bottom: 0.5rem;
 
       span {
-        color: #1D2026;
+        color: #1d2026;
       }
     }
     .course-name {
       font-size: 1.3rem;
       font-weight: 400;
-      color: #1D2026;
+      color: #1d2026;
       margin-bottom: 1.2rem;
     }
     .course-price {
-      color: #FF6636;
+      color: #ff6636;
       font-size: 1.4rem;
       font-weight: 500;
     }
-
   }
 }
 .offer-top {
-  border-bottom: 1px solid #E9EAF0;
+  border-bottom: 1px solid #e9eaf0;
 }
 
 .offer-top,
@@ -238,15 +233,14 @@ form input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #6E7485;
+  color: #6e7485;
   font-size: 1.4rem;
   margin-bottom: 1.6rem;
 
   span {
-    color: #1D2026;
+    color: #1d2026;
     font-weight: 500;
   }
-
 }
 
 .total {
@@ -267,13 +261,13 @@ form input {
 .split {
   width: 100%;
   height: 1px;
-  background-color: #E9EAF0;
+  background-color: #e9eaf0;
 }
 
 .add-to-cart {
   width: 100%;
   background: none;
-  background-color: #FF6636;
+  background-color: #ff6636;
   color: #fff;
   padding: 1.6rem 0;
   border: none;

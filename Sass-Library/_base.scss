@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import 'breakpoints';
-@import 'variables';
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "breakpoints";
+@import "variables";
 
 * {
   box-sizing: border-box;
@@ -28,13 +28,12 @@ html {
 
 body {
   font-family: $base-font;
-  color: #4E5566;
-  font-weight: 300;
+  color: #4e5566;
+  font-weight: 400;
   h1 {
     font-weight: 900;
   }
 }
-
 
 ul {
   list-style-type: none;
@@ -56,7 +55,7 @@ button {
 .sub-title {
   font-size: 1.4rem;
   font-weight: 500;
-  color: #1D2026;
+  color: #1d2026;
 }
 
 label {
@@ -70,7 +69,7 @@ label {
 }
 
 .input-number {
-  color: #8C94A3;
+  color: #8c94a3;
   font-weight: 400;
   font-size: 1.2rem;
 }
@@ -85,12 +84,18 @@ i.bx.bx-menu {
     align-items: center;
     font-size: 4.4rem;
     font-weight: 500;
-    color: #1D2026;
+    color: #1d2026;
   }
 }
 
+.navbar,
+.added-nav {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
 .main-nav--top i.bx.bx-menu {
-  color: #8C94A3;
+  color: #8c94a3;
 
   @include md {
     display: none;

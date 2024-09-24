@@ -245,8 +245,8 @@ header {
       background: none;
       border: 1px solid #ff6636;
       padding: $base-padding - 0.4rem;
-      margin-left: 2.4rem;
       @include xl {
+        margin-left: 2.4rem;
       }
 
       .filter-number {
@@ -285,9 +285,9 @@ header {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 2.4rem $base-padding;
+  padding: 2.4rem 0;
   @include xl {
-    width: 100rem;
+    width: 97%;
   }
 
   .first-half {
@@ -302,11 +302,12 @@ header {
 
 .main-container {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 25% 73%;
   gap: 2.4rem;
   margin-top: 4rem;
 
   @include xl {
+    grid-template-columns: 25% 75%;
     margin: 0 2.4rem;
     border-top: 1px solid #e9eaf0;
     padding-top: 4rem;
@@ -719,6 +720,15 @@ img.logo {
   @include very-small {
     button {
       font-size: 1.6rem;
+    }
+  }
+}
+
+.second-half {
+  .btn-browse {
+    margin-right: 0;
+    @include xl {
+      margin-right: 1.6rem;
     }
   }
 }
