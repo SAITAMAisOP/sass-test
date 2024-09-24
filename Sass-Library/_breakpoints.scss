@@ -51,3 +51,9 @@
     @content;
   }
 }
+
+@mixin course-xxl {
+  @media (max-width:1400px) {
+    @content;
+  }
+}
