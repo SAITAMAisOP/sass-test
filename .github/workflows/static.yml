@@ -33,11 +33,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Compile CSS from SCSS files
-        uses: gha-utilities/sass-build@v0.6.0
-        with:
-          source: src/sass/index.scss
-          destination: public/css/index.css
+      # - name: Compile CSS from SCSS files
+      #   uses: gha-utilities/sass-build@v0.6.0
+      #   with:
+      #     source: src/sass/index.scss
+      #     destination: public/css/index.css
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
