@@ -1,4 +1,4 @@
-@use "sass:math";
+@forward "sass:math";
 @import "base";
 @import "variables";
 @import "components/navigation";
@@ -41,8 +41,9 @@
 
 .search-box {
   width: 43rem;
-  border: 100px solid #e9eaf0;
+  border: 1px solid #e9eaf0;
   padding: 0 0 0 1.8rem;
+
   @include xl {
     padding: 0;
     @include xl {
@@ -86,9 +87,9 @@ textarea {
   align-items: center;
 }
 
-:not(input[type="checkbox"]),
+input:not(input[type="checkbox"]),
 textarea {
-  width: 42rem;
+  width: 43rem;
 }
 
 header {
