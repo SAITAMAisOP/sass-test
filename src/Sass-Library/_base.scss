@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "breakpoints";
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include lg {
+    font-size: 50%;
+  }
+
+  @include md {
+    font-size: 45%;
+  }
+
+  @include very-small {
+    font-size: 32%;
+  }
+}
+
+body {
+  font-family: $base-font;
+  color: #4e5566;
+  font-weight: 400;
+  h1 {
+    font-weight: 900;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px dotted #efefef;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-weight: 300 !important;
+}
+
+.sub-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #1d2026;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.input-number {
+  color: #8c94a3;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+i.bx.bx-menu {
+  display: none;
+
+  @include md {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.4rem;
+    font-weight: 500;
+    color: #1d2026;
+  }
+}
+
+.navbar,
+.added-nav {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.main-nav--top i.bx.bx-menu {
+  color: #8c94a3;
+
+  @include md {
+    display: none;
+  }
+
+  @include xs {
+    display: block;
+  }
+}
