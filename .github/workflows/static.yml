@@ -36,8 +36,8 @@ jobs:
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.6.0
         with:
-          source: sass/*.scss
-          destination: /css/
+          source: src/sass/*.scss
+          destination: public/css/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
