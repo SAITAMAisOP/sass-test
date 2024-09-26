@@ -105,3 +105,65 @@ i.bx.bx-menu {
     display: block;
   }
 }
+.nav-el {
+  position: relative;
+  color: #A1A5B3;
+  transition: .3s;
+}
+
+
+.nav-el::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff6636;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: .2s;
+}
+
+.nav-el:hover::after {
+  opacity: 1;
+}
+.nav-el:hover {
+  color: #fff;
+}
+
+button,
+icon,
+img,
+.search-box,
+input,
+label,
+.icon-box,
+.item-box,
+.footer-col-content {
+  cursor: pointer;
+}
+
+.footer-col-content p {
+  position: relative;
+  width: fit-content;
+  transition: .2s;
+}
+.footer-col-content p::after {
+  content: "";
+  position: absolute;
+  bottom: -.4rem;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff6636;
+  opacity: 0;
+  transition: .2s;
+}
+
+.footer-col-content p:hover::after {
+  opacity: 1;
+}
+
+.footer-col-content p:hover {
+  color: #fff;
+}
